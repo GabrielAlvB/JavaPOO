@@ -22,7 +22,7 @@ public class Cuenta {
 	 public void transferir(double valor, Cuenta cuenta1) {
 		
 		if (this.saldo >= valor) {
-			cuenta1.saldo+=valor;
+			cuenta1.depositar(valor);
 			this.saldo-=valor;
 		} 		
 	}
