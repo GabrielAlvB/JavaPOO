@@ -6,7 +6,7 @@ public class Cuenta {
 	private Cliente titular;
 	private static int total=0;
 	
-	public Cuenta(int agencia) {
+	public Cuenta(int agencia, int numero) {
 		if(agencia <=0) {
 			System.out.println("No se permite ese numero de agencia");
 			this.agencia=1;
