@@ -63,4 +63,8 @@ public class Cuenta {
 	public Cliente getTitular() {
 		return titular;
 	}
+	
+	public static int getTotal() {
+		return Cuenta.total;
+	}
 }
