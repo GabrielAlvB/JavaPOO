@@ -5,6 +5,10 @@ public class Cuenta {
 	private int numero;
 	private Cliente titular;
 	
+	public Cuenta() {
+		System.out.println("Se ha creado una cuenta");
+	}
+	
 	public void depositar(double valor) {
 		saldo+=valor;
 	}
@@ -33,6 +37,8 @@ public class Cuenta {
 	public void setAgencia(int agencia) {
 		if (agencia>0) {
 			this.agencia=agencia;	
+		}else {
+			System.out.println("No es valido el numero");
 		}
 	}
 	public void setNumero(int numero) {
