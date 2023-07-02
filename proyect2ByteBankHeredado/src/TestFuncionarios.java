@@ -6,5 +6,6 @@ public class TestFuncionarios {
 		gabriel.setDocumento("165165");
 		gabriel.setSalario(22000);
 		System.out.println(gabriel.getSalario());
+		System.out.println(gabriel.getBonificacion());
 	}
 }
