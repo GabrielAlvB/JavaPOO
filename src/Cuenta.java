@@ -1,8 +1,8 @@
 
 public class Cuenta {
 	private double saldo;
-	int agencia;
-	int numero;
+	private int agencia;
+	private int numero;
 	Cliente titular;
 	
 	public void depositar(double valor) {
@@ -26,8 +26,14 @@ public class Cuenta {
 			this.saldo-=valor;
 		} 		
 	}
-	public double obtenerSaldo() {
+	public double getSaldo() {
 		return this.saldo;
 	}
-	 
+	
+	public void setAgencia(int agencia) {
+		this.agencia=agencia;
+	}
+	public void setNumero(int numero) {
+		this.numero=numero;
+	}
 }

@@ -7,7 +7,7 @@ public class TestReferencia2 {
 		diego.telefono="5577391422";
 		
 		Cuenta cuentaDiego= new Cuenta();
-		cuentaDiego.agencia=1;
+		cuentaDiego.setAgencia(1);
 		cuentaDiego.titular=diego;
 		System.out.println(cuentaDiego.titular.nombre);
 	}

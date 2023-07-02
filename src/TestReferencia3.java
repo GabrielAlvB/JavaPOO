@@ -7,5 +7,7 @@ public class TestReferencia3 {
 		Cliente cliente=new Cliente();
 		cuentaDiego.titular=cliente;
 		System.out.println(cuentaDiego.titular.nombre);
+		//sin error, referenciamos la direecion de memoria
+		// del objeto cliente a Titular
 	}
 }
