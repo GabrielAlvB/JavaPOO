@@ -4,9 +4,17 @@ public class Cuenta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	private static int total=0;
 	
-	public Cuenta() {
-		System.out.println("Se ha creado una cuenta");
+	public Cuenta(int agencia) {
+		if(agencia <=0) {
+			System.out.println("No se permite ese numero de agencia");
+			this.agencia=1;
+		}else {
+			this.agencia=agencia;
+		}
+		total++;
+		System.out.println("Total de cuentas creadas= "+total);
 	}
 	
 	public void depositar(double valor) {
