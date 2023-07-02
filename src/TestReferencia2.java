@@ -2,6 +2,7 @@
 public class TestReferencia2 {
 	public static void main(String[] args) {
 		Cliente diego=new Cliente();
+		/*
 		diego.nombre="Diego";
 		diego.documento="445473";
 		diego.telefono="5577391422";
@@ -10,5 +11,6 @@ public class TestReferencia2 {
 		cuentaDiego.setAgencia(1);
 		cuentaDiego.titular=diego;
 		System.out.println(cuentaDiego.titular.nombre);
+		*/
 	}
 }
