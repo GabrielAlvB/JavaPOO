@@ -13,4 +13,9 @@ public class Gerente extends Funcionario {
 	public boolean iniciarSesion(String clave) {
 		return clave=="Contraseña";
 	}
+	
+	public double getBonificacion() {
+		return super.getSalario()+
+				super.getBonificacion();
+	}
 }
