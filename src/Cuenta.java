@@ -17,6 +17,8 @@ public class Cuenta {
 		System.out.println("Total de cuentas creadas= "+total);
 	}
 	
+	
+	
 	public void depositar(double valor) {
 		saldo+=valor;
 	}
