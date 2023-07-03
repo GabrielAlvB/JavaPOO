@@ -1,5 +1,5 @@
 
-public class Funcionario {
+public abstract class Funcionario {
 	private String nombre;
 	private String documento;
 	private double salario;
@@ -34,8 +34,6 @@ public class Funcionario {
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
-	public double getBonificacion() {
-		return this.salario*0.05;
-	}
+	public abstract double getBonificacion() ;
 	
 }
