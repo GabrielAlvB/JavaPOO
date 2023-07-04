@@ -1,3 +1,5 @@
+
+
 public abstract class Cuenta {
 
     protected double saldo;
@@ -6,11 +8,11 @@ public abstract class Cuenta {
     private Cliente titular = new Cliente();
 
     private static int total;
-    
+
     public Cuenta() {
-    	
+
     }
-    
+
     public Cuenta( int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
@@ -18,7 +20,7 @@ public abstract class Cuenta {
 
         Cuenta.total ++;
     }
-    
+
     public abstract void deposita(double valor);
 
     public boolean saca(double valor) {

@@ -1,16 +1,21 @@
 
 public class TestReferencias {
+
 	public static void main(String[] args) {
-		//
-		//Funcionario funcionario= new Gerente();
-		Funcionario funcionario= new Contador();
-		funcionario.setNombre("Gabriel");
 		
-		//La siguuiente linea no funciona, pues de lo especifico se pasa a lo
-		//general
-		//Gerente gerente=new Funcionario();
-		Gerente gerente=new Gerente();
-		gerente.setNombre("Alvarez");
+		// Elemento mas generico puede ser adaptado
+		//                     al elemento mas especifico
+		Funcionario funcionario = new Gerente();
+		funcionario.setNombre("Diego");
 		
+		Gerente gerente = new Gerente();
+		gerente.setNombre("Jimena");
+		
+		funcionario.setSalario(2000);
+		gerente.setSalario(10000);
+		
+		gerente.iniciarSesion("_ddddd");
+				
 	}
+	
 }

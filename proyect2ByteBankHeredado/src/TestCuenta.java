@@ -7,11 +7,8 @@ public class TestCuenta {
 		cc.deposita(2000);
 		cc.transfiere(1000, ca);
 		
-		Cuenta cuenta=new CuentaCorriente(1,2);
-		cuenta.deposita(1000);
-		
-		System.out.println(cuenta.getSaldo());
 		System.out.println(cc.getSaldo());
+		System.out.println(ca.getSaldo());
 	}
 	
 }
