@@ -1,5 +1,4 @@
 
-
 //                  extiende de
 public class Gerente extends Funcionario implements Autenticable {
 

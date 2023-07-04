@@ -1,5 +1,4 @@
 
-
 public class ControlBonificacion {
 
 	private double suma;
