@@ -1,7 +1,7 @@
 
-public class Administrador extends Funcionario {
+public class Administrador extends FuncionarioAutenticable {
 
-	@Override
+	// ya no es override porque no extiende de funcionario 
 	public double getBonificacion() {
 		// TODO Auto-generated method stub
 		return 0;
