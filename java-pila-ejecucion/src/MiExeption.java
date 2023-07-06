@@ -1,5 +1,5 @@
 
-public class MiExeption extends RuntimeException {
+public class MiExeption extends Exception {
 
 	public MiExeption() {
 		super();	
