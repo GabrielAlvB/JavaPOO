@@ -10,19 +10,10 @@ public class Flujo {
     metodo2();
     System.out.println("Fim do metodo1");
   }
-  public static void metodo2(){
-    System.out.println("Ini do metodo2");
-    for(int i =1; i<= 5; i++){
-      System.out.println(i);
-      try {
-		int n=0;
-		int resultado=1/n;
-		System.out.println(resultado);
-      	} catch (ArithmeticException e) {
-		System.out.println(e.getMessage());
-		e.printStackTrace();
-		}
-    }
-    System.out.println("Fim do metodo2");
+  
+  private static void metodo2() {
+      System.out.println("Inicio del metodo2");
+      ArithmeticException exception = new ArithmeticException();
+      throw exception;
   }
 }
