@@ -13,7 +13,6 @@ public class Flujo {
   
   private static void metodo2() {
       System.out.println("Inicio del metodo2");
-      ArithmeticException exception = new ArithmeticException();
-      throw exception;
+      throw new ArithmeticException("Surgio  un error");
   }
 }
