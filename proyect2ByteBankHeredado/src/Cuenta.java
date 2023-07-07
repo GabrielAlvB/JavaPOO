@@ -21,14 +21,12 @@ public abstract class Cuenta {
     }
 
     public abstract void deposita(double valor);
-
-    public boolean saca(double valor) {
-        if(this.saldo >= valor) {
-            this.saldo -= valor;
-            return true;
-        } else {
-            return false;
-        }
+//ahora utilizaremose exeptions en el metodo SACA
+    public void saca(double valor) {
+        if(this.saldo < valor) {
+            throw new SaldoInsufisienteException("No tienes Saldo");
+        } 
+        this.saldo-=valor;
     }
 
     public boolean transfiere(double valor, Cuenta destino) {
