@@ -22,7 +22,7 @@ public abstract class Cuenta {
 
     public abstract void deposita(double valor);
 //ahora utilizaremose exeptions en el metodo SACA
-    public void saca(double valor) {
+    public void saca(double valor) throws SaldoInsufisienteException {
         if(this.saldo < valor) {
             throw new SaldoInsufisienteException("No tienes Saldo");
         } 
@@ -31,7 +31,12 @@ public abstract class Cuenta {
 
     public boolean transfiere(double valor, Cuenta destino) {
         if(this.saldo >= valor) {
-            this.saca(valor);
+            try {
+				this.saca(valor);
+			} catch (SaldoInsufisienteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
             destino.deposita(valor);
             return true;
         } else {
