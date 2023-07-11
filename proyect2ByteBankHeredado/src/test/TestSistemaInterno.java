@@ -1,3 +1,7 @@
+package test;
+import modelo.SistemaInterno;
+import modelo.Administrador;
+import modelo.Gerente;
 
 public class TestSistemaInterno {
 

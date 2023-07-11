@@ -1,3 +1,6 @@
+package test;
+import modelo.Funcionario;
+import modelo.Contador;
 
 
 public class TestFuncionario {

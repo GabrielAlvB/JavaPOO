@@ -1,3 +1,8 @@
+package test;
+import modelo.Funcionario;
+import modelo.Contador;
+import modelo.Gerente;
+import modelo.ControlBonificacion;
 
 public class TestControlBonificacion {
 

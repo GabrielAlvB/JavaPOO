@@ -1,5 +1,7 @@
-
 //                  extiende de
+package modelo;
+
+
 public class Gerente extends Funcionario implements Autenticable {
 
     // Sobre-escritura de metodo

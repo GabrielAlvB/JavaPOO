@@ -1,3 +1,6 @@
+package test;
+import modelo.Funcionario;
+import modelo.Gerente;
 
 public class TestReferencias {
 

@@ -1,3 +1,6 @@
+package test;
+import modelo.Gerente;
+
 
 public class TestGerente {
 
