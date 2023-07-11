@@ -13,7 +13,7 @@ public class CuentaCorriente extends Cuenta {
 
 	@Override
 	public void deposita(double valor) {
-		// TODO Auto-generated method stub
+		this.saldo+=valor;
 		
 	}
 	
