@@ -1,8 +1,8 @@
 
-public class Connection {
+public class Connection implements AutoCloseable{
 	 public Connection() {
 	       System.out.println("Abriendo conexion");
-	       throw new IllegalStateException();
+	       //throw new IllegalStateException();
 	   }
 
 	   public void leerDatos() {
@@ -13,4 +13,9 @@ public class Connection {
 	   public void cerrar() {
 	       System.out.println("Cerrando conexion");
 	   }
+
+	@Override
+	public void close() throws Exception {
+			cerrar();
+	}
 }

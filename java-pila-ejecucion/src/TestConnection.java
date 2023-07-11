@@ -1,6 +1,15 @@
 
 public class TestConnection {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		
+		try (Connection con= new Connection()){
+			con.leerDatos();
+		} catch (IllegalStateException e) {
+			System.out.println("ejecutando catch");
+			e.printStackTrace();
+		}
+		
+		/*//este codigo funciona pero podria ser mejor
 		Connection conec = null;
 		
 		try {
@@ -17,6 +26,7 @@ public class TestConnection {
 				conec.cerrar();
 
 			}
-		}
+		}*/
 	}
+	
 }
