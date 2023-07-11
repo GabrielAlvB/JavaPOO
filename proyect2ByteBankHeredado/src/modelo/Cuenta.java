@@ -1,5 +1,9 @@
 package modelo;
-
+/**
+ * 
+ * @version 1.0
+ * @author gabri
+ */
 public abstract class Cuenta {
 
     protected double saldo;
@@ -13,6 +17,11 @@ public abstract class Cuenta {
 
     }
 
+    /**
+     * 
+     * @param agencia
+     * @param numero
+     */
     public Cuenta( int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
@@ -22,6 +31,11 @@ public abstract class Cuenta {
     }
 
     public abstract void deposita(double valor);
+    /**
+     * Este metodo retira dinero y lanza exception si es insuficiente
+     * @param valor
+     * @throws SaldoInsufisienteException
+     */
 //ahora utilizaremose exeptions en el metodo SACA
     public void saca(double valor) throws SaldoInsufisienteException {
         if(this.saldo < valor) {
