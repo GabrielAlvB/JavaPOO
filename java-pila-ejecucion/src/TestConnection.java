@@ -1,9 +1,10 @@
 
 public class TestConnection {
 	public static void main(String[] args) {
-		Connection conec = new Connection();
+		Connection conec = null;
 		
 		try {
+			conec=new Connection();
 			conec.leerDatos();
 			//se necesita cerrar la conexion
 			//conec.cerrar();
@@ -12,7 +13,10 @@ public class TestConnection {
 			e.printStackTrace();
 		}finally {
 			// con finally si o si se ejecuta el metodo cerrar conection
-			conec.cerrar();
+			if (conec != null) {
+				conec.cerrar();
+
+			}
 		}
 	}
 }

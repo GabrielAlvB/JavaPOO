@@ -2,11 +2,12 @@
 public class Connection {
 	 public Connection() {
 	       System.out.println("Abriendo conexion");
+	       throw new IllegalStateException();
 	   }
 
 	   public void leerDatos() {
 	       System.out.println("Recibiendo datos");
-	       throw new IllegalStateException();
+	       
 	   }
 
 	   public void cerrar() {
