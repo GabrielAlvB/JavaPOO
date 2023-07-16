@@ -10,5 +10,8 @@ public class TestArregloReferencias {
 		cuentas[0]=cc;
 		
 		System.out.println(cuentas[0]);
+		
+		cuentas[1]=new CuentaCorriente(2, 3);
+		System.out.println(cuentas[1]);
 	}
 }
