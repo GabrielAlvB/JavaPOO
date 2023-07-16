@@ -13,5 +13,10 @@ public class TestArregloReferencias {
 		
 		cuentas[1]=new CuentaCorriente(2, 3);
 		System.out.println(cuentas[1]);
+		
+		System.out.println("printing the Array");
+		for (int i = 0; i < cuentas.length; i++) {
+			System.out.println(cuentas[i]);
+		}
 	}
 }
