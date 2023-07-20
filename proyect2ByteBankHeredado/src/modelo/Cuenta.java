@@ -100,4 +100,11 @@ public abstract class Cuenta {
         return "Numero: " + this.numero + ", Agencia: " + this.agencia;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+    	Cuenta cuenta= (Cuenta) obj;
+    	return this.agencia==cuenta.getAgencia() &&
+    			this.numero==cuenta.getNumero();
+    }
+    
 }
