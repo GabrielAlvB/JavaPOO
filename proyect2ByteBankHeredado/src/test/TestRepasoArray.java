@@ -20,5 +20,14 @@ public class TestRepasoArray {
 		lista.add(numero2);
 		System.out.println(lista.get(0));
 		System.out.println(lista.get(1));
+		
+		for (int i = 0; i < lista.size(); i++) {
+			System.out.println(lista.get(i));
+		}
+		System.out.println("Using foreach");
+	
+		for (Integer integer : lista) {
+			System.out.println(integer);
+		}
 	}
 }
