@@ -12,22 +12,27 @@ public class TestRepasoArray {
 		
 		//WRAPPER
 		//Integer numero2=new Integer(8);
-		Integer numero2=Integer.valueOf(8); //metodo actualizado para asignar valor
+		Integer numeroObjeto=Integer.valueOf(8); //metodo actualizado para asignar valor
 		//lista sin <> generics
 		List<Integer> lista=new ArrayList<Integer>();
 		//primitivo != object
 		lista.add(numero);//auto boxing
-		lista.add(numero2);
+		lista.add(numeroObjeto);
 		System.out.println(lista.get(0));
 		System.out.println(lista.get(1));
 		
-		for (int i = 0; i < lista.size(); i++) {
-			System.out.println(lista.get(i));
-		}
-		System.out.println("Using foreach");
-	
-		for (Integer integer : lista) {
-			System.out.println(integer);
-		}
+		//unboxing
+		//int valorPrimitivo=numeroObjeto;
+		int valorPrimitivo=numeroObjeto.intValue();
+		
+	//wrapers
+		double doubleInteger= numeroObjeto.doubleValue();
+		float floatInteger=numeroObjeto.floatValue();
+		
+		System.out.println("MAX value Integer: "+Integer.MAX_VALUE);
+		System.out.println("MIN value Integer: "+Integer.MIN_VALUE);
+		System.out.println("Numero de Bytes: "+ Integer.BYTES);
+		System.out.println("Numero de bits: "+Integer.SIZE);
+		
 	}
 }
