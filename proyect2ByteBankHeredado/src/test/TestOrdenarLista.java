@@ -52,6 +52,7 @@ class OrdenarLista implements Comparator<Cuenta>{
 	//el algoritmo lo hace por si solo ordena -1,1,0
 	@Override
 	public int compare(Cuenta o1, Cuenta o2) {
+		/*
 		if (o1.getNumero()==o2.getNumero()) {
 			return 0;	
 		}else if(o1.getNumero()<=o2.getNumero()) {
@@ -59,7 +60,13 @@ class OrdenarLista implements Comparator<Cuenta>{
 		}else {
 			return 1;
 		}
+		*/
+		//esto es lo mismo que decir 
+		// return o1.getNumero()-o2.getNumero();
+		//ya que no nos importa el valor, solamente el signo +,-, o 0
 		
+		//FORMA WRAPPER
+		return Integer.compare(o1.getNumero(), o2.getNumero());
 	}
 	
 }
