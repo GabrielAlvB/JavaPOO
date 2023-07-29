@@ -70,3 +70,21 @@ class OrdenarLista implements Comparator<Cuenta>{
 	}
 	
 }
+
+class OrdenarPorNombre implements Comparator<Cuenta>{
+	 
+	//el algoritmo lo hace por si solo ordena -1,1,0
+	@Override
+	public int compare(Cuenta o1, Cuenta o2) {
+		
+		if (o1.getNumero()==o2.getNumero()) {
+			return 0;	
+		}else if(o1.getNumero()<=o2.getNumero()) {
+			return -1;
+		}else {
+			return 1;
+		}
+		
+	}
+	
+}
